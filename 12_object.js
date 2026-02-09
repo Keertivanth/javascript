@@ -12,7 +12,7 @@ const user={
 // console.log(user[sym]);
 
 //user.email="kv2@gmail.com";
-//Object.freeze(user);//revent from changes in object
+//Object.freeze(user);//prevent from changes in object
 //console.log(user);
  user.greeting=function(){
     console.log("kv");
