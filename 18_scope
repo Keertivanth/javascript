@@ -1,0 +1,31 @@
+function one(){
+    const username="kv";
+
+    function two(){
+        const websiter="tv";
+        console.log(username);
+    }
+    //console.log(websiter);//ye nhi chlega kyuki  website global scope nhi h ...func k  bhr aagya
+    two();
+}//call krne pr hi two excute hoga 
+//one();
+
+if(true){
+    const username="kv";
+    if(username==="kv"){
+        const website="u"
+    //console.log(username + website)
+    }
+    // console.log(website);-->give error ->calling outside the scope
+}
+// console.log(username);
+
+function add(num){
+    return num+1;
+}
+add(5);
+console.log(add(5));  
+
+const add=function(num){//add has already declared as func
+    return num+2;
+}
