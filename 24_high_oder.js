@@ -69,3 +69,4 @@ const program=["js","kv","java"]
 program.forEach((item,index,arr) => {
     console.log(item,index,arr);
 })
+// for each always uses callback
