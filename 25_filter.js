@@ -30,6 +30,6 @@ const books= [//array of books
 ]
 
 let userBook = books.filter((bk)=>bk.genre ==='Science')
-let userBook1 = books.filter((bk)=>bk.publish >=2000)
+let userBook1 = books.filter((bk)=>{bk.publish >=2000})
 //if use scope {} use return
 console.log(userBook1);
