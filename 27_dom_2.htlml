@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"
+    
+</head>
+<body class="bg-black"> <!-- apply bg black on body -->
+    <div>
+        <h1 id="title" class="heading">DOM learning <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
