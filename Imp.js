@@ -187,7 +187,7 @@ formatStudent({name:"Aarav", course:"B.Tech"})
 function formatStudent(obj) {
   // STUDENT CODE STARTS HERE
    const{name,course}=obj;
-   return `Student${nmae} is enrolled in ${course}`;
+   return `Student${name} is enrolled in ${course}`;
   // STUDENT CODE ENDS HERE
 }
 
@@ -239,8 +239,11 @@ createSuccessPromise("Done")
 
 function createSuccessPromise(message) {
   // STUDENT CODE STARTS HERE
-
-
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve(message);
+    }, 2000);
+  });
   // STUDENT CODE ENDS HERE
 }
 
@@ -266,7 +269,10 @@ createConditionalPromise(false) → Reject
 function createConditionalPromise(condition) {
   // STUDENT CODE STARTS HERE
 
-
+return new Promise(function(resolve,reject){
+  if(condition) resolve ("Success");
+  else reject("failed");
+});
   // STUDENT CODE ENDS HERE
 }
 
@@ -294,7 +300,13 @@ handlePromise(createConditionalPromise(false))
 
 function handlePromise(promise) {
   // STUDENT CODE STARTS HERE
-
+promise
+.then(function(result){
+  console.log(result);
+})
+.catch(function(error){
+  console.log(error);
+});
 
   // STUDENT CODE ENDS HERE
 }
